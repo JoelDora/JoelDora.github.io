@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método de Bisección</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Método de Bisección</h1>
+        <form id="bisectionForm">
+            <label for="function">Función (en términos de x):</label>
+            <input type="text" id="function" placeholder="Ejemplo: x^3 - x - 2" required>
+            
+            <label for="a">Valor inicial (a):</label>
+            <input type="number" id="a" placeholder="Ejemplo: 1" required>
+            
+            <label for="b">Valor final (b):</label>
+            <input type="number" id="b" placeholder="Ejemplo: 2" required>
+            
+            <label for="tolerance">Tolerancia:</label>
+            <input type="text" id="tolerance" placeholder="Ejemplo: 0.0000001" required>
+
+            <label for="precision">Cálculo preciso:</label>
+            <div>
+                <span>Dígitos después del punto decimal:</span>
+                <input type="range" id="precision" min="1" max="20" value="10">
+                <span id="precisionValue">10</span>
+            </div>
+            
+            <button type="submit">Calcular</button>
+        </form>
+
+        <h2>Resultados</h2>
+        <table id="resultsTable">
+            <thead>
+                <tr>
+                    <th>Iteración</th>
+                    <th>a</th>
+                    <th>b</th>
+                    <th>f(a)</th>
+                    <th>f(b)</th>
+                    <th>xi</th>
+                    <th>f(xi)</th>
+                    <th>Error</th>
+                </tr>
+            </thead>
+            <tbody>
+ 
+            </tbody>
+        </table>
+        
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.3.0/math.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+        
