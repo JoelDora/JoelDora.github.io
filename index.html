@@ -14,13 +14,13 @@
             <input type="text" id="function" placeholder="Ejemplo: x^3 - x - 2" required>
             
             <label for="a">Valor inicial (a):</label>
-            <input type="number" id="a" placeholder="Ejemplo: 1" required>
+            <input type="number" id="a" placeholder="Ejemplo: 1.5" step="any" required>
             
             <label for="b">Valor final (b):</label>
-            <input type="number" id="b" placeholder="Ejemplo: 2" required>
+            <input type="number" id="b" placeholder="Ejemplo: 0.5" step="any" required>
             
             <label for="tolerance">Tolerancia:</label>
-            <input type="text" id="tolerance" placeholder="Ejemplo: 0.0000001" required>
+            <input type="number" id="tolerance" placeholder="Ejemplo: 0.0000001" step= 'any'required>
 
             <label for="precision">Cálculo preciso:</label>
             <div>
@@ -30,6 +30,8 @@
             </div>
             
             <button type="submit">Calcular</button>
+            <button type="button" id="clearButton">Limpiar</button>
+
         </form>
 
         <h2>Resultados</h2>
